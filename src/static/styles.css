@@ -63,6 +63,8 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  /* Teilnehmerliste optisch absetzen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
 }
 
 .activity-card h4 {
@@ -141,4 +143,64 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px;
+  background: #eef3fb;
+  border-radius: 4px;
+  border: 1px solid #dde3ef;
+}
+
+.participants-section strong {
+  color: #3949ab;
+  display: block;
+  margin-bottom: 6px;
+}
+
+
+.participants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dde3ef;
+  border-radius: 3px;
+  padding: 2px 6px 2px 8px;
+  margin: 0 4px 4px 0;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.participant-email {
+  margin-right: 4px;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 2px;
+  margin-left: 2px;
+  border-radius: 2px;
+  transition: background 0.15s;
+}
+.delete-participant:hover {
+  background: #ffeaea;
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin-left: 4px;
 }
